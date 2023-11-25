@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Galaxy</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/contact.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("form").submit(function() {
+
+                    var name = $("#name").val();
+                    var contactnum = $("#contactNumber").val()
+                    var email = $("#email").val();
+                    var comments = $("#comments").val();
+
+                    if ((name == "") || (contactnum == "") || (!$.isNumeric(contactnum)) || (email == "") || (comments == "")) {
+                        alert("Check your inputs and try again");
+                        return false; //stop the form from submitting
+                    } else {
+                        
+                    }
+            });
+        })
+    </script>
+
+</head>
+
+<body>
+    <section class="menu">
+        <div class="header">
+            <div id="icon"></div>
+            <div class="slider-container">
+                <div id="slider">
+
+
+
+                    <div id="menu">
+                        <nav class="nav-menu">
+                            <ul style="display: inline-block">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Shop.html">Shop</a></li>
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="Contact.html">Contact</a></li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                    <button class="start"><i style="font-size: 24px;" class="fa fa-bars"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main">
+        <div class="form">
+            <section>
+                <h1>Contact Us </h1>
+                <form action="mailto:anthea.muscat06@gmail.com" method="post" enctype="text/plain">
+                    <div class="input_wrapper"><label for="name">Full Name</label><input type="text" id="name" name="name" value="" placeholder="Your Full Name..."></div>
+                    <br>
+
+                    <div class="input_wrapper"><label for="email">Email</label><input type="text" id="email" name="email" value="" placeholder="Your Email..."></div>
+                    <br>
+
+                    <div class="input_wrapper"><label for="contactNumber">Contact Number</label><input type="text" id="contactNumber" name="contactNumber" value="" placeholder="Your Contact Number..."></div>
+                    <br>
+
+                    <label for="comments">Comment</label>
+                    <textarea name="comments" id="comments" rows="8" placeholder="Write you comment here..."></textarea>
+
+
+                    <div class="btn">
+                        <button type="submit" style="background-color: transparent; border: none; margin-left: 50px;">
+                            <i class="fa fa-paper-plane-o fa-2x send" aria-hidden="true"></i>
+                            <i class="fa fa-paper-plane-o fa-2x send2" aria-hidden="true"></i>
+                            <p>send</p>
+                        </button>
+                    </div>
+                </form>
+
+
+
+            </section>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.3367593078833!2d14.465585412671377!3d35.89463063010833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e51490a827795%3A0xcd642972198a6cce!2sGamebreaker%20Malta!5e0!3m2!1sen!2smt!4v1683789742099!5m2!1sen!2smt" width="650" height="705" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <hr>
+    <p id="copyright">&copy;Anthea Muscat</p>
+    <p id="date">2023</p>
+
+</footer></html>

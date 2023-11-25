@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Galaxy</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/shop.css">
+    <script src="./scripts/button.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+    <script src="./scripts/menu.js"></script>
+
+    <script>
+        function AddToCart() {
+            alert("Product Added to Cart");
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="bg_img"><img src="./Images/Funko.png" alt="Background Image"></div>
+    <section class="menu">
+        <div class="header">
+
+
+            <div id="menu">
+                <nav class="nav-menu">
+                    <ul style="display: inline-block">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <button class="start"><i class="fa fa-bars"></i>
+            </button>
+            <div id="icon"></div>
+        </div>
+    </section>
+
+    <section class="main">
+        <h1>Funko</h1>
+        <div class="grid-container" id="funkos">
+            <div class="grid-item"><img id="funko1" src="./Images/funko1.png">
+                <p>Funko POP Buddy<br>
+                    Hawkeye Kate Bishop<br>
+                    with Dog – 1212<br><span id="moreInfo"><br>Category: Hawkeye, Marvel, Movies & TV, Pop!, Standard POP!S<br>License: MARVEL <br>Product Type: POP! VINYL</span><br>
+                    <b>€15.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 85px;">Add to Cart</button>
+                <button type="button" onclick="funko1()" id="info">More Info</button>
+            </div>
+            <div class="grid-item"><img id="funko2" src="./Images/funko2.png">
+                <p>The Mandalorian with the child<br>
+                    - Star Wars: The Mandalorian<br><span id="moreInfo2"><br>Category: Best Sellers, Movies & TV, Pop!, Shop all, Standard POP!S, The Mandalorian<br>License: STAR WARS: THE MANDALORIAN<br>Product Type: POP! MOMENT</span><br>
+                    <b>€38.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()">Add to Cart</button>
+                <button type="button" onclick="funko2()" id="info">More Info</button>
+            </div>
+            <div class="grid-item"><img id="funko3" src="./Images/funko3.png">
+                <p>Mose Schrute - The Office<br><span id="moreInfo3"><br>Category: Best Sellers, CON EXCLUSIVES, EXCLUSIVES, Movies & TV, Pop!, RETAILER EXCLUSIVES, Shop all, Standard POP!S, THE OFFICE<br>Product Type: CONVENTION POP! VINYL (EXC)</span><br>
+                    <b>€15.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 35px;">Add to Cart</button>
+                <button type="button" onclick="funko3()" id="info">More Info</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Video Games</h1>
+        <div class="grid-container" id="videoGames">
+            <div class="grid-item"><img id="VideoGame" src="./Images/VideoGame1.png">
+                <p>PS5 Marvel Spider-Man Miles<br>
+                    Morales Ultimate Edition<br><span id="moreInfo4"><br>Discover the complete web-slinging story with the Marvel's Spider-Man: Miles Morales Ultimate Edition.<br><br>
+
+                        Ultimate Edition includes:<br>
+                        - Marvel's Spider-Man: Miles Morales (PS4™ and PS5™)<br>
+                        - Marvel's Spider-Man Remastered (PS5™)</span><br>
+                    <b>€59.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()">Add to Cart</button>
+                <button type="button" onclick="videoGame1()" id="info">More Info</button>
+            </div>
+            <div class="grid-item" id="hogwartsLegacy"><img id="VideoGame" src="./Images/VideoGame2.png">
+                <p>Hogwarts Legacy<br><span id="moreInfo5"><br><br>Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Your legacy is what you make of it.</span><br>
+                    <b>€55.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 34px;">Add to Cart</button>
+                <button type="button" onclick="videoGame2()" id="info">More Info</button>
+            </div>
+            <div class="grid-item"><img id="VideoGame" src="./Images/VideoGame3.png">
+                <p>Street Fighter 6<br><br><span id="moreInfo6">With Street Fighter 6, players will be able to take their skills around the world in search of their own personal strength.
+
+                        No one starts off as a champion.
+                        Even the strongest of fighters had to take that first step.
+                        Now it's your turn to take up the challenge and bring your game to the next level.</span><br>
+                    <b>€55.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 35px;">Add to Cart</button>
+                <button type="button" onclick="videoGame3()" id="info">More Info</button>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section>
+        <h1>Board Games</h1>
+        <div class="grid-container" id="boardGames" style="margin-bottom: 2%;">
+            <div class="grid-item"><img id="BoardGame" src="./Images/BoardGame1.png">
+                <p>Monopoly DC Comics Edition<br><br><span id="moreInfo7">The world of DC Originals is back with its very own edition of Monopoly! Battle your way through the different worlds and conquer LexCorp or Wayne Industries as you tour the board gathering your selection of heroes and super villains. Team up with your sidekick, and test your mighty skills against the evil forces of Darkseid, Lex Luthor or The Joker. Stay sharp and take a look at the Daily Planet, or visit the Rogues Gallery to gather the clues that might lead you to the final victory or a challenging defeat.</span><br>
+                    <b>€39.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 85px;">Add to Cart</button>
+                <button type="button" onclick="boardGame1()" id="info">More Info</button>
+            </div>
+            <div class="grid-item"><img id="BoardGame" src="./Images/BoardGame2.png">
+                <p>Dungeons and Dragons Board<br>
+                    Game Dragonlance : Warriors<br>
+                    of Krynn English Version<br><br><span id="moreInfo8">Dragonlance: Warriors of Krynn—a Dungeons & Dragons stand-alone board game of adventure and strategy
+                        Face off against the sinister Dragon Army in battles ranging from skirmishes to epic sieges
+                        Explore the surrounding lands to find treasure, allies, and other advantages
+                        Shape the story of the war through 12 connected campaign scenarios.
+                        Earn rewards from your successes that increase your capabilities the next time you play
+                        Cooperative game for 3–5 players</span><br>
+                    <b>€80.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 34px;">Add to Cart</button>
+                <button type="button" onclick="boardGame2()" id="info">More Info</button>
+            </div>
+            <div class="grid-item"><img id="BoardGame" src="./Images/BoardGame3.png">
+                <p>Twister Board Game<br>
+                    Refresh 2021<br><br><span id="moreInfo9">It's the Classic Twister gameplay you loved growing up! Spin the spinner to see if players will place their hands and feet on red, yellow, blue, or green spots on the mat. Turn, twist, and tangle. But don't fall over, because the last player standing wins!
+                        Are you ready to get twisted up in knots? The spinner lets players know which hand and which foot goes where</span><br>
+                    <b>€35.00</b>
+                </p>
+                <button type="button" onclick="AddToCart()" style="margin-top: 55px;">Add to Cart</button>
+                <button type="button" onclick="boardGame3()" id="info">More Info</button>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+<hr>
+<footer>
+    <p id="copyright">&copy;Anthea Muscat</p>
+    <p id="date">2023</p>
+
+</footer></html>

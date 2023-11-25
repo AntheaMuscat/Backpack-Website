@@ -1,0 +1,116 @@
+/* Homepage */
+#slider {
+    overflow: hidden;
+}
+
+
+
+.menu {
+    margin: 0;
+}
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    30% {
+        left: 0;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    63% {
+        left: -100%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    95% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.bag-container{
+    padding-top: 5%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+
+#bg-img1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*Grid */
+
+.game-container{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30%;
+}
+
+.grid-item {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item img{
+    border-radius: 20%;
+}
+
+#bg-img{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+
+
+
+button{
+    width: 25%;
+    height: 30px;
+    background-color: #595EE0;
+    color: white;
+    font-weight: bold;
+    transition: .2s ease-in-out 0s;
+    border: 2px solid #595EE0;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+#info{
+    background-color: transparent;
+    border: 2px solid black;
+    margin-left: 20px;
+}
+
+#anticipated{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
